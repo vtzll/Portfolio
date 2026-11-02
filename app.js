@@ -3,7 +3,6 @@
 
   var view = document.getElementById('view');
   var brand = document.getElementById('brand');
-  var foot = document.getElementById('foot');
   var site = {};
   var projects = [];
 
@@ -102,7 +101,6 @@
       var t = el('span', 'title', p.title || 'Untitled');
       t.setAttribute('dir', 'auto');
       row.appendChild(t);
-      if (p.year) row.appendChild(el('span', 'year', p.year));
       a.appendChild(thumb);
       a.appendChild(row);
       grid.appendChild(a);
@@ -234,8 +232,12 @@
         return p;
       });
       document.documentElement.setAttribute('data-theme', site.theme === 'light' ? 'light' : 'dark');
-      brand.textContent = site.title || 'Portfolio';
-      foot.textContent = '© ' + new Date().getFullYear() + ' ' + (site.title || '');
+      brand.textContent = '';
+      var logo = el('img', 'logo');
+      logo.src = 'uploads/logo.png';
+      logo.alt = '';
+      brand.appendChild(logo);
+      brand.appendChild(el('span', '', site.title || 'Portfolio'));
       window.addEventListener('hashchange', route);
       route();
     })
