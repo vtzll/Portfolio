@@ -3,7 +3,7 @@
 # Example:  repo: sara-ahmed/portfolio
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME
+  repo: wavelength3d/portfolio
   branch: main
 
 media_folder: uploads
