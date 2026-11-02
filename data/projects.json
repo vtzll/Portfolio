@@ -1,11 +1,32 @@
 {
   "projects": [
     {
-      "title": "Sample project (delete me)",
+      "title": "Enkido - Sunglasses",
       "year": "2026",
-      "subtitle": "Product visualization",
-      "description": "This is a placeholder so you can see how a project page looks.\n\nOpen /admin, delete this project, and add your own.",
-      "media": []
+      "subtitle": "Asset creation - Visual direction - Product Visualization",
+      "cover": "/uploads/3.jpg",
+      "media": [
+        {
+          "type": "image",
+          "src": "/uploads/5.jpg"
+        },
+        {
+          "type": "image",
+          "src": "/uploads/1.jpg"
+        },
+        {
+          "type": "image",
+          "src": "/uploads/2.jpg"
+        },
+        {
+          "type": "image",
+          "src": "/uploads/3.jpg"
+        },
+        {
+          "type": "image",
+          "src": "/uploads/4.jpg"
+        }
+      ]
     }
   ]
 }
