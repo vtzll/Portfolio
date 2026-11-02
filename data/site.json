@@ -1,9 +1,16 @@
 {
-  "title": "Your Name",
+  "title": "wavelength",
   "theme": "dark",
-  "about": "Write a short introduction here. You can edit this from the admin panel.\n\nSecond paragraph: what you do, who you work with.",
+  "about": "3D Artist & Visual Director",
   "email": "you@example.com",
   "links": [
-    { "label": "Instagram", "url": "https://instagram.com/yourhandle" }
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/wavelength3d"
+    },
+    {
+      "label": "Behance",
+      "url": "https://www.behance.net/mustafahameed10"
+    }
   ]
 }
