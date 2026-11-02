@@ -1,0 +1,117 @@
+# ONE LINE TO CHANGE: replace the repo value below with
+# your GitHub username, a slash, and your repository name.
+# Example:  repo: sara-ahmed/portfolio
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME
+  branch: main
+
+media_folder: uploads
+public_folder: /uploads
+
+collections:
+  - name: content
+    label: Content
+    files:
+      - name: projects
+        label: Projects
+        file: data/projects.json
+        fields:
+          - label: Projects
+            name: projects
+            widget: list
+            label_singular: project
+            summary: "{{fields.title}}"
+            hint: "Drag projects up or down to change the order they appear on the site."
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Year
+                name: year
+                widget: string
+                required: false
+              - label: Short line
+                name: subtitle
+                widget: string
+                required: false
+                hint: "Optional, e.g. Product visualization"
+              - label: Cover image
+                name: cover
+                widget: image
+                required: false
+                hint: "Shown on the home page grid."
+              - label: Description
+                name: description
+                widget: text
+                required: false
+                hint: "Leave a blank line between paragraphs."
+              - label: Media
+                name: media
+                widget: list
+                required: false
+                hint: "Add images and embeds in the order you want them shown."
+                types:
+                  - label: Image
+                    name: image
+                    widget: object
+                    fields:
+                      - label: Image
+                        name: src
+                        widget: image
+                      - label: Caption
+                        name: caption
+                        widget: string
+                        required: false
+                  - label: Embed (video, 3D model)
+                    name: embed
+                    widget: object
+                    fields:
+                      - label: Link or embed code
+                        name: code
+                        widget: text
+                        hint: "Paste a YouTube, Vimeo or Sketchfab link, or any embed code."
+                      - label: Shape
+                        name: ratio
+                        widget: select
+                        options: ["16:9", "4:3", "1:1", "4:5", "9:16"]
+                        default: "16:9"
+                      - label: Caption
+                        name: caption
+                        widget: string
+                        required: false
+
+      - name: site
+        label: Site settings
+        file: data/site.json
+        fields:
+          - label: Name
+            name: title
+            widget: string
+          - label: Theme
+            name: theme
+            widget: select
+            options:
+              - { label: "Black background", value: dark }
+              - { label: "White background", value: light }
+            default: dark
+          - label: About text
+            name: about
+            widget: text
+          - label: Email
+            name: email
+            widget: string
+            required: false
+          - label: Links
+            name: links
+            widget: list
+            required: false
+            label_singular: link
+            hint: "Instagram, Vimeo, Behance, LinkedIn... Full address starting with https://"
+            fields:
+              - label: Name
+                name: label
+                widget: string
+              - label: URL
+                name: url
+                widget: string

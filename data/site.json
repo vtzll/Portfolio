@@ -1,0 +1,9 @@
+{
+  "title": "Your Name",
+  "theme": "dark",
+  "about": "Write a short introduction here. You can edit this from the admin panel.\n\nSecond paragraph: what you do, who you work with.",
+  "email": "you@example.com",
+  "links": [
+    { "label": "Instagram", "url": "https://instagram.com/yourhandle" }
+  ]
+}

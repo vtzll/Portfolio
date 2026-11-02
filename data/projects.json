@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "title": "Sample project (delete me)",
+      "year": "2026",
+      "subtitle": "Product visualization",
+      "description": "This is a placeholder so you can see how a project page looks.\n\nOpen /admin, delete this project, and add your own.",
+      "media": []
+    }
+  ]
+}
